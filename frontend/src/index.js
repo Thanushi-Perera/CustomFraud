@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +11,15 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Import necessary modules
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Login from './Login'; // Assuming Login component is in a file named Login.js
+
+// Render the Login component to the root element in the HTML file
+ReactDOM.render(
+  <React.StrictMode>
+    <Login />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
