@@ -1,10 +1,10 @@
-import React from "react";
-import FileUpload from "./components/FileUpload";
+import "./App.css";
+
+//imports
+import Login from "./pages/Login";
+
 function App() {
-  return (
-    <div className="App">
-      <FileUpload />
-    </div>
-  );
+  return <Login />;
 }
+
 export default App;

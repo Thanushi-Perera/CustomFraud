@@ -1,25 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import App from './App';
+import App from "./App";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "remixicon/fonts/remixicon.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+import { BrowserRouter } from "react-router-dom";
+import { AuthContextProvider } from "./context/AuthContext";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AuthContextProvider>
   </React.StrictMode>
-);
-
-// Import necessary modules
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Login from './Login'; // Assuming Login component is in a file named Login.js
-
-// Render the Login component to the root element in the HTML file
-ReactDOM.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>,
-  document.getElementById('root')
 );
